@@ -14,13 +14,20 @@ help get you started. Please feel free to reach out to one of our engineers if y
 
 **We understand your time is valuable, so please do not spend more than 5 hours on this exercise.**
 
+## Getting Started
+
+To setup Rails w/ Postgresql: `cd api && rake db:setup`
+To setup Ember: `cd web && yarn`
+
+You should now see a list of 40 users when you visit the index page of the app (localhost:4200).
+
 ## Deliverables
 
 * A user should be able to navigate to the `/admin` page to see a list of all distributed tokens and view first name, last name, and the token assigned to each user.
 * On the `/admin` page a user should be able to request a new token be generated for any user.
 * A user should be able to navigate to the `/` (index) page and see a protected input for their 4-digit token. On input, the system should attempt to validate the token. If the validation is successful, the validated user's first and last name should show on the page. If the validation is unsuccessful, an error message should be displayed showing that is not a valid token.
 
-## Deliverables
+## Extra Credit
 
 * Write tests to conver any functionality you add
 * Expose and api to validate a token and return a user resource
