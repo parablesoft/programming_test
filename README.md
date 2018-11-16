@@ -30,4 +30,4 @@ You should now see a list of 40 users when you visit the index page of the app (
 ## Extra Credit
 
 * Write tests to conver any functionality you add
-* Expose and api to validate a token and return a user resource
+* Expose an api to validate a token and return a user resource
