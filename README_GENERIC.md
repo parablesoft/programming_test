@@ -11,6 +11,8 @@ distribute to each employee as their identification.
 
 ## Deliverables
 
+* Our team uses git for version control. So please create a repository on Github for you application, and send us a link so we can track your progress. Provide useful commit messages to describe the evolution of your application as you complete the following deliverables. 
+
 * Create the database schema to host user records
   * first_name
   * last_name
