@@ -9,25 +9,21 @@ identify themselves as they mark work complete. Our engineers have worked with
 the client and determined that a 4-digit unique numeric code will be sufficient to
 distribute to each employee as their identification.
 
-We have provided a boilerplate Ruby on Rails (api) and Ember.js (web) app setup to
-help get you started. Please feel free to reach out to one of our engineers if you have any questions.
-
-**We understand your time is valuable, so please do not spend more than 5 hours on this exercise.**
-
-## Getting Started
-
-To setup Rails w/ Postgresql: `cd api && rake db:setup`
-To setup Ember: `cd web && yarn`
-
-You should now see a list of 40 users when you visit the index page of the app (localhost:4200).
-
 ## Deliverables
 
+* Create the database schema to host user records
+  * first_name
+  * last_name
+  * identification_token
+
 * A user should be able to navigate to the `/admin` page to see a list of all distributed tokens and view first name, last name, and the token assigned to each user.
-* On the `/admin` page a user should be able to request a new token be generated for any user.
+* On the `/admin` page a user should be able to request a new token be generated for any user. This should be a button name `regenerate`, and the regenerated token must be unique.
 * A user should be able to navigate to the `/` (index) page and see a protected input for their 4-digit token. On input, the system should attempt to validate the token. If the validation is successful, the validated user's first and last name should show on the page. If the validation is unsuccessful, an error message should be displayed showing that is not a valid token.
+* You should provide any instructions necessary to build and launch your application locally. (our team uses Macs, but we can make it work on Windows if required)
 
 ## Extra Credit
 
+* Wrap your app up in a Dockerfile, or use docker-compose if you need multiple images
+* Deploy your application to a PaaS provider such as Heroku
 * Write tests to conver any functionality you add
 * Expose an api to validate a token and return a user resource
